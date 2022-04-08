@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from functions import linear, quadratic, exponential, Gaussian
 
-def R_squared(fname, function, param1, param2, param3=0):
+def R_squared(fname, function, param1, param2, param3):
     # Load x and y data from .csv file
     data = pd.read_csv(fname+".csv", header=None).to_numpy()
     x_values = data[:,0]
