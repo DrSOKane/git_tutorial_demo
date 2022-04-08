@@ -3,6 +3,13 @@ import pandas as pd
 from functions import linear, quadratic, exponential, Gaussian
 
 def R_squared(fname, function, param1, param2, param3=0):
+    # Calculates R squared value of analytic fit to data
+    # fname: name of .csv file where data is stored
+    # function: choose between "linear", "quadratic", "exponential" and "Gaussian"
+    # param1:
+    # param2:
+    # param3:
+    
     # Load x and y data from .csv file
     data = pd.read_csv(fname+".csv", header=None).to_numpy()
     x_values = data[:,0]
